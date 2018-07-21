@@ -54,6 +54,15 @@
     line-height: 24px;
   }
 
+  li {
+    color: #757575;
+    letter-spacing: 0.1rem;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+
+
 
 
   /*---------------------------------------
@@ -248,12 +257,18 @@
     padding-right: 0;
   }
 
-  header p,
-  header span {
-    font-size: 12px;
+  header p {
+    font-size: 14px;
     line-height: 24px;
     padding-top: 12px;
   }
+
+  header span {
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 12px;
+  }
+
 
   header a,
   header span {
