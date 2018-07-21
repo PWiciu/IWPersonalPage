@@ -10,7 +10,7 @@
      TYPOGRAPHY
   -----------------------------------------*/
 
-  h1,h2,h3,h4,h6 {
+  h1,h2,h3,h4 {
     font-weight: 600;
   }
 
@@ -150,26 +150,6 @@
     text-align: center;
   }
 
-  .author {
-    border-top: 1px solid #f0f0f0;
-    padding-top: 1.5em;
-    margin-top: 2em;
-  }
-  .author img,
-  .author .author-info {
-    display: inline-block;
-    vertical-align: top;
-  }
-  .author-info h5 {
-    margin-bottom: 0;
-  }
-  .author img {
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-  }
-
 
   #about, #offer, #prices,
   #news-detail {
@@ -177,11 +157,6 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
-  #prices, #service {
-    text-align: center;
-  }
-
 
   /*---------------------------------------
        PRE LOADER
@@ -480,29 +455,6 @@
     padding-top: 60px;
     padding-bottom: 40px;
   }
-
-  .profile img,
-  .profile figcaption {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 1em;
-  }
-  .profile img {
-    border-radius: 100%;
-    width: 65px;
-    height: 65px;
-    margin-right: 1em;
-  }
-  .profile figcaption h3 {
-    margin-top: 0;
-  }
-
-  #about h6 {
-    color: #858585;
-    margin: 0;
-  }
-
-
 
   /*---------------------------------------
       TEAM MEMBERS
