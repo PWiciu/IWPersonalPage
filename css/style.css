@@ -46,15 +46,6 @@
     padding-bottom: 2px;
   }
 
-  h5 {
-    font-weight: 500;
-  }
-
-  h6 {
-    letter-spacing: 0;
-    font-weight: normal;
-  }
-
   p {
     color: #757575;
     letter-spacing: 0.1rem;
@@ -85,7 +76,6 @@
   }
 
   a:hover, a:active, a:focus {
-    //color: #a5c422;
     color: #009CC0;
     outline: none;
   }
@@ -108,22 +98,6 @@
     margin-top: 0;
   }
 
-  .section-btn {
-    background: #a5c422;
-    border: 0;
-    border-radius: 3px;
-    color: #ffffff;
-    font-size: inherit;
-    font-weight: 500;
-    padding: 14px 20px;
-    transition: transform 0.1s ease-in;
-    transform: translateX(0);
-  }
-
-  .section-btn:hover {
-    transform: translateY(-5px);
-  }
-
   .text-align-right {
     text-align: right;
   }
@@ -136,14 +110,6 @@
     border-top: 1px solid #f2f2f2;
     margin-top: 4em;
     padding-top: 2.5em;
-  }
-
-  .btn-gray {
-    background: #393939;
-  }
-
-  .btn-blue {
-    background: #4267b2;
   }
 
   .news-thumb {
@@ -205,22 +171,16 @@
   }
 
 
-  #about, #team, #news,
+  #about, #offer, #prices,
   #news-detail {
     position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
-  #news, #service {
+  #prices, #service {
     text-align: center;
   }
-
-  .centered {
-    text-align: center;
-  }
-
-
 
 
   /*---------------------------------------
@@ -648,7 +608,7 @@
       NEWS
   -----------------------------------------*/
 
-  #news, #news-detail {
+  #prices, #news-detail {
     background: #f9f9f9;
   }
 
