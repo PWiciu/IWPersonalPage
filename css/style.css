@@ -1,18 +1,10 @@
-  /*@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
-  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
-  @import url("https://fonts.googleapis.com/css?family=Open+Sans");*/
   @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
-
 
   body {
     background: #ffffff;
-    /*font-family: 'Poppins', sans-serif;*/
     font-family: 'Roboto Slab', sans-serif;
-    /*font-family: 'Titillium Web', sans-serif;*/
-    /*font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;*/
     overflow-x: hidden;
   }
-
 
   /*---------------------------------------
      TYPOGRAPHY
@@ -21,9 +13,7 @@
   h1,h2,h3,h4,h6 {
     font-weight: 600;
   }
-  h5 {
-    font-weight: 500;
-  }
+
   h1 {
     color: #252525;
     font-size: 2.2em;
@@ -54,6 +44,10 @@
     color: #454545;
     font-size: 1.2em;
     padding-bottom: 2px;
+  }
+
+  h5 {
+    font-weight: 500;
   }
 
   h6 {
@@ -227,29 +221,6 @@
   }
 
 
-  /*---------------------------------------
-     PLACES
-  -----------------------------------------*/
-
-  #places {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: #f9f9f9;
-    line-height: 0;
-    margin: 0;
-  }
-
-  .places-map{
-    max-width: 100%;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border: solid 1px #d9d9d9;
-  }
-
-  .arrival-description {
-    margin-top: 10px;
-    text-align: justify;
-  }
 
 
   /*---------------------------------------
@@ -301,6 +272,31 @@
   }
 
 
+  /*---------------------------------------
+     PLACES
+  -----------------------------------------*/
+
+  #places {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #f9f9f9;
+    line-height: 0;
+    margin: 0;
+  }
+
+  .places-map{
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: solid 1px #d9d9d9;
+  }
+
+  .arrival-description {
+    margin-top: 10px;
+    text-align: justify;
+  }
+
+
 
   /*---------------------------------------
       MENU
@@ -343,7 +339,6 @@
   }
 
   header span i {
-    /*color: #a5c422;*/
     color: #009CC0;
     margin-right: 5px;
   }
@@ -413,7 +408,6 @@
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover,
   .navbar-default .navbar-nav > .active > a:focus {
-    /*color: #393939;*/
     color: #009CC0;
     background-color: transparent;
     text-decoration: underline;
