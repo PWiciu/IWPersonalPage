@@ -20,7 +20,6 @@ h1 {
 }
 
 section h1:after {
-    /*margin-top: 0;*/
     display: block;
     width: 80px;
     height: 1px;
@@ -55,18 +54,6 @@ p {
     line-height: 24px;
 }
 
-#about ul {
-    padding-left: 20px;
-}
-
-#about li {
-    color: #757575;
-    letter-spacing: 0.1rem;
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 24px;
-}
-
 /*---------------------------------------
    GENERAL
 -----------------------------------------*/
@@ -80,10 +67,6 @@ a {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     text-decoration: none !important;
-}
-
-.contact-mail {
-    color: #757575
 }
 
 a:hover, a:active, a:focus {
@@ -123,48 +106,7 @@ a:hover, a:active, a:focus {
     padding-top: 2.5em;
 }
 
-.news-thumb {
-    background: #ffffff;
-    border-radius: 10px;
-}
-
-.news-thumb img {
-    border-radius: 10px 10px 0 0;
-}
-
-.news-info {
-    padding: 10px;
-    text-align: left;
-}
-
-.news-info p {
-    text-align: justify;
-}
-
-.price-info {
-    margin-bottom: 10px;
-    padding: 10px;
-    text-align: center;
-}
-
-.price-info p {
-    padding: 1rem;
-    font-size: 2rem;
-}
-
-.news-info span {
-    display: block;
-    letter-spacing: 0.5px;
-}
-
-.news-info h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-#about, #offer, #prices,
-#news-detail {
+.content-section {
     position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -174,80 +116,8 @@ a:hover, a:active, a:focus {
     text-align: justify;
 }
 
-/*---------------------------------------
-     PRE LOADER
------------------------------------------*/
-
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99999;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    background: none repeat scroll 0 0 #ffffff;
-}
-
-.spinner {
-    border: 1px solid transparent;
-    border-radius: 3px;
-    position: relative;
-}
-
-.spinner:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 45px;
-    height: 45px;
-    margin-top: -10px;
-    margin-left: -10px;
-    border-radius: 50%;
-    border: 1px solid #575757;
-    border-top-color: #ffffff;
-    animation: spinner .9s linear infinite;
-}
-
-@-webkit- @keyframes spinner {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes spinner {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/*---------------------------------------
-   PLACES
------------------------------------------*/
-
-#places {
-    padding-top: 50px;
-    padding-bottom: 50px;
+.background-gray {
     background: #f9f9f9;
-    line-height: 0;
-    margin: 0;
-}
-
-.places-map {
-    max-width: 100%;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border: solid 1px #d9d9d9;
-}
-
-.arrival-description {
-    margin-top: 10px;
-    text-align: justify;
 }
 
 /*---------------------------------------
@@ -261,7 +131,7 @@ header {
     height: 45px;
 }
 
-header .col-md-8 {
+.header-contact-data {
     padding-right: 0;
 }
 
@@ -309,8 +179,12 @@ header span i {
     margin-right: 5px;
 }
 
+.contact-mail {
+    color: #757575
+}
+
 /*---------------------------------------
-    MENU
+    NAVBAR
 -----------------------------------------*/
 
 .navbar-default {
@@ -322,13 +196,20 @@ header span i {
 }
 
 .navbar-default .navbar-brand {
-    color: #393939;
     font-weight: 500;
 }
 
 .navbar-default .navbar-brand .fa {
     color: #009CC0;
-/ / color: #a5c422;
+}
+
+.navbar-brand {
+    padding-top: 1rem;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    max-width: 100%;
 }
 
 .navbar-default .navbar-nav li.appointment-btn {
@@ -336,7 +217,7 @@ header span i {
 }
 
 .navbar-default .navbar-nav li.appointment-btn a {
-    background: #009CC0 /*#a5c422*/;
+    background: #009CC0;
     border-radius: 3px;
     color: #ffffff;
     font-weight: 600;
@@ -360,7 +241,7 @@ header span i {
 }
 
 .navbar-default .navbar-nav > li a:hover {
-    color: #4267b2 /*#393939*/ !important;
+    color: #4267b2 !important;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -397,8 +278,6 @@ header span i {
 -----------------------------------------*/
 
 #about {
-    background: #f9f9f9;
-    background-size: cover;
     padding-top: 60px;
     padding-bottom: 40px;
 }
@@ -407,283 +286,89 @@ header span i {
     margin-bottom: 20px;
 }
 
-/*---------------------------------------
-    TEAM MEMBERS
------------------------------------------*/
-
-.team-thumb {
-    background-color: #f9f9f9;
-    border-radius: 0 0 10px 10px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+#about ul {
+    padding-left: 20px;
 }
 
-.team-info {
-    padding: 20px 30px 0 30px;
-}
-
-.team-contact-info {
-    border-top: 1px solid #e9e9e9;
-    padding-top: 1.2em;
-    margin-top: 1.5em;
-}
-
-.team-contact-info .fa {
-    margin-right: 5px;
-    display: inline-block;
-}
-
-.team-contact-info p {
-    margin-bottom: 2px;
-}
-
-.team-contact-info a {
+#about li {
     color: #757575;
+    letter-spacing: 0.1rem;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
 }
 
-.team-thumb .social-icon li {
-    font-weight: 500;
-}
-
-.team-thumb .social-icon li a {
-    background: #ffffff;
-    border-radius: 100%;
-    font-size: 20px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 2px 0 2px;
-}
-
-.team-thumb .social-icon {
-    opacity: 0;
-    transform: translateY(100%);
-    transition: 0.5s 0.2s;
+.about-btn-container {
     text-align: center;
-    position: relative;
-    top: 0;
+    margin-top: 20px;
 }
 
-.team-thumb:hover .social-icon {
-    opacity: 1;
-    transition-delay: 0.3s;
-    transform: translateY(0px);
-    top: -22em;
+.about-more-hidden {
+    display: none;
 }
 
 /*---------------------------------------
-   SERVICE
+     OFFER
 -----------------------------------------*/
-
-#service {
-    background: #a5c422;
+.news-info {
+    padding: 10px;
+    text-align: left;
 }
 
-#service h2,
-#service h4 {
-    color: #ffffff;
+.news-info p {
+    text-align: justify;
 }
 
-#service p {
-    color: #d9d9d9;
+.news-info span {
+    display: block;
+    letter-spacing: 0.5px;
 }
 
-#service .service-thumb {
-    padding: 0 22px;
-}
-
-#service .fa {
-    font-size: 50px;
+.news-info h3 {
+    margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.news-thumb {
     background: #ffffff;
-    color: #a5c422;
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
-    border-radius: 100%;
-}
-
-/*---------------------------------------
-    NEWS
------------------------------------------*/
-
-#prices, #news-detail {
-    background: #f9f9f9;
-}
-
-#news-detail blockquote {
-    margin: 30px 0;
-}
-
-.news-detail-thumb .news-image img {
     border-radius: 10px;
 }
 
-.news-detail-thumb h3 {
-    margin-bottom: 8px;
+.news-thumb img {
+    border-radius: 10px 10px 0 0;
 }
 
-.news-image {
-    margin-bottom: 30px;
-    position: relative;
-}
+/*---------------------------------------
+     PRICES
+-----------------------------------------*/
 
-.news-image img {
-    width: 100%;
-}
-
-.news-detail-thumb ul {
-    margin: 32px 12px 22px 0px;
-}
-
-.news-detail-thumb ul li {
-    list-style: circle;
-    font-weight: normal;
-    padding: 6px 12px 6px 0px;
-}
-
-.news-sidebar {
-    margin-top: 16px;
-}
-
-.news-social-share {
+.price-info {
+    margin-bottom: 10px;
+    padding: 10px;
     text-align: center;
-    padding-top: 22px;
 }
 
-.news-social-share .btn {
-    border-radius: 100px;
-    border: none;
-    font-size: 10px;
-    font-weight: 600;
-    margin: 2px 6px;
-    padding: 8px 14px;
+.price-info p {
+    padding: 1rem;
+    font-size: 2rem;
 }
 
-.news-social-share .btn-primary {
-    background: #3b5998;
-}
-
-.news-social-share .btn-success {
-    background: #1da1f2;
-}
-
-.news-social-share .btn-danger {
-    background: #dd4b39;
-}
-
-.news-social-share a .fa {
-    padding-right: 4px;
-}
-
-.recent-post {
-    padding-top: 2px;
-    padding-bottom: 18px;
-}
-
-.recent-post .media img {
-    border-radius: 100%;
-    width: 80px;
-    height: 80px;
-    margin-right: 5px;
-}
-
-.recent-post .media-heading {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: inherit;
-    margin-top: 5px;
-}
-
-.news-categories {
-    margin-top: 8px;
-}
-
-.news-categories li a {
-    color: #2b2b2b;
-}
-
-.news-ads {
-    background: #ffffff;
-    border-right: 4px solid #2b2b2b;
-    padding: 42px;
+.price-info {
+    margin-bottom: 10px;
+    padding: 10px;
     text-align: center;
-    margin: 26px 0 26px 0;
 }
 
-.news-ads.sidebar-ads {
-    border-left: 4px solid #2b2b2b;
-    border-right: 0px;
-}
-
-.news-ads h4 {
-    font-size: 18px;
-}
-
-.news-tags h4 {
-    padding-bottom: 6px;
-}
-
-.news-categories li,
-.news-tags li {
-    list-style: none;
-    display: inline-block;
-    margin: 4px;
-}
-
-.news-tags li a {
-    background: #393939;
-    border-radius: 50px;
-    color: #ffffff;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 500;
-    text-decoration: none;
-    float: left;
-    min-width: 30px;
-    padding: 6px 12px;
-    -webkit-transition: all ease-in-out 0.4s;
-    transition: all ease-in-out 0.4s;
-}
-
-.news-tags li a:hover {
-    background: #4267b2;
+.price-info p {
+    padding: 1rem;
+    font-size: 2rem;
 }
 
 /*---------------------------------------
     APPOINTMENT
 -----------------------------------------*/
-
-#appointment {
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-}
-
-#appointment label {
-    color: #393939;
-    font-weight: 500;
-}
-
-#appointment .form-control {
-    background: #f9f9f9;
-    border: none;
-    border-radius: 3px;
-    box-shadow: none;
-    font-size: 14px;
-    font-weight: normal;
-    margin-bottom: 15px;
-    transition: all ease-in-out 0.4s;
-}
-
-#appointment input,
-#appointment select {
-    height: 45px;
-}
-
 #appointment button#cf-submit {
-    /*background: #a5c422;*/
     background: #009CC0;
     color: #ffffff;
     font-weight: 600;
@@ -695,12 +380,51 @@ header span i {
     color: #ffffff;
 }
 
+.appointment-invitation-text {
+    margin-top: 20px;
+}
+
+/*---------------------------------------
+    PLACES
+-----------------------------------------*/
+#places {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 0;
+    margin: 0;
+}
+
+.offset-content-below {
+    margin-bottom: 20px;
+}
+
+.places-map {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: solid 1px #d9d9d9;
+}
+
+.arrival-description {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.opening-hours p {
+    line-height: 18px;
+}
+
+.opening-hours span {
+    font-weight: 500;
+    display: inline-block;
+    padding-left: 10px;
+}
+
 /*---------------------------------------
    FOOTER
 -----------------------------------------*/
 
 footer {
-    /*padding-top: 80px;*/
     padding-bottom: 40px;
 }
 
@@ -733,59 +457,6 @@ footer a:hover {
     margin-bottom: 2px;
 }
 
-.latest-stories {
-    margin-bottom: 20px;
-}
-
-.stories-image,
-.stories-info {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.stories-image img {
-    border-radius: 100%;
-    width: 65px;
-    height: 65px;
-}
-
-.stories-info {
-    margin-left: 15px;
-}
-
-.stories-info h5 {
-    margin-bottom: 2px;
-}
-
-.stories-info span {
-    color: #858585;
-    font-size: 12px;
-}
-
-.opening-hours p {
-    line-height: 18px;
-}
-
-.opening-hours span {
-    font-weight: 500;
-    display: inline-block;
-    padding-left: 10px;
-}
-
-.copyright-text p,
-.footer-link a {
-    color: #858585;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.footer-link a {
-    font-size: 12px;
-    display: inline-block;
-    padding: 0 10px;
-    margin-top: 4px;
-}
-
 .angle-up-btn {
     position: relative;
     bottom: 4em;
@@ -814,16 +485,10 @@ footer a:hover {
 }
 
 /*---------------------------------------
-   RESPONSIVE STYLES
+    RESPONSIVE
 -----------------------------------------*/
 
 @media only screen and (max-width: 1200px) {
-    /*h1 {
-      font-size: 4em;
-    }*/
-    /*h2 {
-      font-size: 2.5em;
-    }*/
     h3 {
         font-size: 1.5em;
     }
@@ -849,10 +514,6 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 992px) {
-    .slider .item {
-        background-position: center;
-    }
-
     header {
         padding-bottom: 10px;
     }
@@ -869,14 +530,6 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 767px) {
-    .about-photo {
-        text-align: center;
-    }
-
-    .about-photo img {
-        max-height: 500px;
-        display: inline;
-    }
 
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         border-color: transparent;
@@ -892,17 +545,16 @@ footer a:hover {
         padding-bottom: 8px;
     }
 
-    .news-sidebar {
-        margin-top: 2em;
+    .about-photo {
+        text-align: center;
     }
 
-    #appointment-form {
-        padding-top: 4em;
-        padding-bottom: 4em;
+    .about-photo img {
+        max-height: 500px;
+        display: inline;
     }
 
     footer {
-        /*padding-top: 60px;*/
         padding-bottom: 0;
     }
 
@@ -958,4 +610,55 @@ footer a:hover {
     }
 }
 
+/*---------------------------------------
+     PRE LOADER
+-----------------------------------------*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+}
+
+.spinner {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    position: relative;
+}
+
+.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 1px solid #575757;
+    border-top-color: #ffffff;
+    animation: spinner .9s linear infinite;
+}
+
+@-webkit- @keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
 
