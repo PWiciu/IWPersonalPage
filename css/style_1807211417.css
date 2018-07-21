@@ -55,7 +55,10 @@
     line-height: 24px;
   }
 
-  li {
+  #about ul {
+    padding-left: 20px;
+  }
+  #about li {
     color: #757575;
     letter-spacing: 0.1rem;
     font-size: 15px;
@@ -166,6 +169,10 @@
     position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .justify-text-desktop {
+    text-align: justify;
   }
 
   /*---------------------------------------
@@ -921,6 +928,12 @@
 
 
     @media only screen and (max-width: 400px) {
+      .justify-text-desktop {
+        text-align: left;
+      }
+      .news-info p{
+        text-align: left;
+      }
       .contact-mail {
         font-size: 12px;
       }
