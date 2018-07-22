@@ -201,7 +201,7 @@ header span i {
     box-shadow: 0 2px 8px rgba(0, 0, 0, .075);
     border: none;
     margin-bottom: 0;
-    padding: 10px;
+    padding: 15px 10px 10px 10px;
 }
 
 .navbar-default .navbar-brand {
@@ -336,6 +336,7 @@ header span i {
     background: #f9f9f9;
     border: 1px solid #f9f9f9;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .news-thumb img {
@@ -382,6 +383,7 @@ header span i {
     ACTIVITY
 -----------------------------------------*/
 #activity {
+    margin-top: -30px;
     padding-top: 0;
 }
 #activity ul {
