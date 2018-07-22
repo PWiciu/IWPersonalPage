@@ -334,6 +334,7 @@ header span i {
 
 .news-thumb {
     background: #f9f9f9;
+    border: 1px solid #f9f9f9;
     border-radius: 10px;
 }
 
@@ -367,12 +368,26 @@ header span i {
     font-size: 2rem;
 }
 
+.price-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.price-thumb img {
+    border-radius: 10px 10px 0 0;
+}
+
+
 /*---------------------------------------
     ACTIVITY
 -----------------------------------------*/
+#activity {
+    padding-top: 0;
+}
 #activity ul {
     margin-bottom: 0;
 }
+
 
 /*---------------------------------------
     APPOINTMENT
