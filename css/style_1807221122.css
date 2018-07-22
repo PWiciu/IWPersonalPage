@@ -19,7 +19,7 @@ h1 {
     font-size: 2.2em;
 }
 
-section h1:after {
+#about h1:after {
     display: block;
     width: 80px;
     height: 1px;
@@ -53,6 +53,15 @@ p {
     font-weight: normal;
     line-height: 24px;
 }
+
+li {
+    color: #757575;
+    letter-spacing: 0.1rem;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
 
 /*---------------------------------------
    GENERAL
@@ -290,13 +299,6 @@ header span i {
     padding-left: 20px;
 }
 
-#about li {
-    color: #757575;
-    letter-spacing: 0.1rem;
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 24px;
-}
 
 .about-btn-container {
     text-align: center;
@@ -331,7 +333,7 @@ header span i {
 }
 
 .news-thumb {
-    background: #ffffff;
+    background: #f9f9f9;
     border-radius: 10px;
 }
 
@@ -366,6 +368,13 @@ header span i {
 }
 
 /*---------------------------------------
+    ACTIVITY
+-----------------------------------------*/
+#activity ul {
+    margin-bottom: 0;
+}
+
+/*---------------------------------------
     APPOINTMENT
 -----------------------------------------*/
 #appointment button#cf-submit {
@@ -387,6 +396,10 @@ header span i {
 /*---------------------------------------
     PLACES
 -----------------------------------------*/
+#places h1 {
+    font-size: 1.8em;
+}
+
 #places {
     padding-top: 50px;
     padding-bottom: 50px;
