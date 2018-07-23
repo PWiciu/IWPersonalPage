@@ -219,6 +219,7 @@ header span i {
 .navbar-brand img {
     max-height: 40px;
     max-width: 100%;
+    margin-top: -3px;
 }
 
 .navbar-default .navbar-nav li.appointment-btn {
