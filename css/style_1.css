@@ -445,6 +445,8 @@ header span i {
 .arrival-description {
     margin-top: 10px;
     text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .opening-hours p {
@@ -608,6 +610,10 @@ footer a:hover {
 
     .angle-up-btn {
         bottom: 0.5em;
+    }
+
+    .arrival-description {
+        padding-bottom: 20px;
     }
 }
 
