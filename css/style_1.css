@@ -295,6 +295,11 @@ header span i {
     margin-bottom: 20px;
 }
 
+.about-photo img{
+    max-height: 400px;
+}
+
+
 #about ul {
     padding-left: 20px;
 }
@@ -580,7 +585,6 @@ footer a:hover {
     }
 
     .about-photo img {
-        max-height: 500px;
         display: inline;
     }
 
