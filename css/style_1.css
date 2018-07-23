@@ -83,6 +83,7 @@ a:hover, a:active, a:focus {
     outline: none;
 }
 
+/*
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -92,6 +93,7 @@ a:hover, a:active, a:focus {
     cursor: pointer;
     background: #009CC0;
 }
+*/
 
 .section-title {
     padding-bottom: 20px;
@@ -201,7 +203,7 @@ header span i {
     box-shadow: 0 2px 8px rgba(0, 0, 0, .075);
     border: none;
     margin-bottom: 0;
-    padding: 15px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .navbar-default .navbar-brand {
