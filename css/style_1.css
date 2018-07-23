@@ -614,6 +614,8 @@ footer a:hover {
 
     .arrival-description {
         padding-bottom: 20px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
