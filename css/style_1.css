@@ -449,6 +449,9 @@ header span i {
     padding-right: 10px;
 }
 
+.opening-hours {
+    text-align: center;
+}
 .opening-hours p {
     line-height: 18px;
 }
